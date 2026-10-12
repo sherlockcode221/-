@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ربع الهجرة - استخرج وبيّن</title>
+<style>
+:root{--bg:#fbf7f4;--tx:#3b2a33;--card:#fff;--mut:#8a7580;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d171b;--tx:#f3e8ee;--card:#2a2227;--mut:#b9a3ad}}
+:root[data-theme="dark"]{--bg:#1d171b;--tx:#f3e8ee;--card:#2a2227;--mut:#b9a3ad}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Amiri","Traditional Arabic",Tahoma,serif;line-height:1.7}
+header{text-align:center;padding:26px 16px 8px}
+header h1{margin:0;font-size:28px;color:#c9708f}
+header p{margin:6px 0 0;color:var(--mut);font-size:15px}
+section{max-width:760px;margin:0 auto;padding:10px 14px}
+h2{font-size:19px;margin:22px 0 10px;padding:6px 14px;border-radius:12px;color:#fff;display:inline-block;background:var(--c)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{perspective:900px;height:340px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.in{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.card.f .in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:14px;display:flex;flex-direction:column;justify-content:center;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.1);overflow:auto}
+.front{background:var(--card);border-top:6px solid var(--c);font-size:17px;padding-top:30px}
+.num{position:absolute;top:8px;right:12px;width:26px;height:26px;border-radius:50%;background:var(--c);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center}
+.back{background:var(--c);color:#fff;transform:rotateY(180deg);font-size:15.5px;line-height:1.8}
+.hint{font-size:12px;color:var(--mut);margin-top:8px}
+.wm{position:fixed;left:0;right:0;bottom:0;text-align:center;pointer-events:none;z-index:9;padding:4px 0 calc(4px + env(safe-area-inset-bottom,0px));font-size:13px;color:#c9708f;opacity:.55;background:linear-gradient(transparent,var(--bg) 60%)}footer{text-align:center;color:var(--mut);padding:24px 16px 40px;font-size:14px}
+</style>
+</head>
+<body>
+<header><h1>🌿 ربع الهجرة · استخرج وبيّن الدلالة 🌿</h1><p>سورة النساء ١٠٠ – ١٠٤ · فكّري ثم اضغطي لتري الإجابة</p></header>
+<div class="wm">معلمة منال ناجى</div><div id="app"></div>
+<footer><b style="color:#c9708f">إعداد: معلمة منال ناجى</b><br>﴿ وكان الله عليمًا حكيمًا ﴾</footer>
+<script>
+var D=[["آية الهجرة (١٠٠)", "#c9708f", [["استخرج ما يدل على أن ثواب المهاجر يبدأ من لحظة خروجه لا وصوله، وبيّن وجه الدلالة.", "<b>الدليل:</b> ﴿ ومن يخرج من بيته مهاجرًا إلى الله ورسوله ثم يدركه الموت فقد وقع أجره على الله ﴾<br><b>وجه الدلالة:</b> ربط الأجر بالخروج، وجاء «وقع» بالماضي للتحقق، فالأجر ثابت ولو مات قبل الوصول."], ["استخرج ما يدل على أن الهجرة المقبولة تشترط إخلاص القصد.", "<b>الدليل:</b> ﴿ مهاجرًا إلى الله ورسوله ﴾<br><b>وجه الدلالة:</b> جعل المقصد الله ورسوله، فمن هاجر لدنيا يصيبها لم يكن له هذا الأجر (حديث: إنما الأعمال بالنيات)."], ["استخرج ما يدل على أن الله يعوّض المهاجر في الدنيا قبل الآخرة.", "<b>الدليل:</b> ﴿ يجد في الأرض مراغمًا كثيرًا وسعة ﴾<br><b>وجه الدلالة:</b> «يجد» وعد معجّل في الدنيا بغيظ الأعداء وسعة العيش، ثم يأتي الأجر في الآخرة."], ["استخرج ما يدل على أن باب المغفرة مفتوح لمن تأخر في قرار الهجرة.", "<b>الدليل:</b> ﴿ وكان الله غفورًا رحيمًا ﴾<br><b>وجه الدلالة:</b> المهاجر قد يتأخر حتى يقرر ويستعد، فبمجرد أن يهاجر يغفر الله له ما سبق من تقصير."]]], ["آية القصر (١٠١)", "#5b9bb5", [["استخرج ما يدل على أن القصر لا يشمل كل الصلوات، وبيّن وجه الدلالة.", "<b>الدليل:</b> ﴿ أن تقصروا من الصلاة ﴾<br><b>وجه الدلالة:</b> «من» للتبعيض، فالقصر لبعض الصلوات وهي الرباعية، أما الفجر والمغرب فلا يُقصران."], ["استخرج ما يدل على أن القصر محدود بقدر معلوم لا يُترك لاجتهاد الشخص.", "<b>الدليل:</b> ﴿ فليس عليكم جناح أن تقصروا من الصلاة ﴾<br><b>وجه الدلالة:</b> لو قال «تقصروا الصلاة» لم ينضبط القصر، فجاءت «من» ليرجع فيه إلى فعل النبي ﷺ وأصحابه (من أربع إلى ركعتين)."], ["استخرج ما يدل على أن سبب التشريع مرتبط بحقيقة العداوة.", "<b>الدليل:</b> ﴿ إن الكافرين كانوا لكم عدوًا مبينًا ﴾<br><b>وجه الدلالة:</b> تعليل لتأكيد الحذر الدائم: عداوتهم ظاهرة وكراهتهم للمؤمنين شديدة."]]], ["صلاة الخوف (١٠٢)", "#6aa57a", [["استخرج ما يدل على أن القائد في المعركة هو الإمام في الصلاة.", "<b>الدليل:</b> ﴿ وإذا كنت فيهم فأقمت لهم الصلاة ﴾<br><b>وجه الدلالة:</b> النبي ﷺ يقود الجيش ويؤمّ الصلاة في ساحة القتال، ولقائد الجيش اختيار الكيفية المناسبة لخطورة الموقف."], ["استخرج ما يدل على العدل بين الطائفتين في صلاة الخوف.", "<b>الدليل:</b> ﴿ فلتقم طائفة منهم معك ﴾ ﴿ ولتأت طائفة أخرى لم يصلوا فليصلوا معك ﴾<br><b>وجه الدلالة:</b> كل طائفة تصلي معه وتحرس الأخرى بالتناوب، وتبادل الصفوف من تمام العدل."], ["استخرج ما يدل على أن اليقظة مطلوبة حتى والمسلم في عبادة.", "<b>الدليل:</b> ﴿ وليأخذوا حذرهم وأسلحتهم ﴾<br><b>وجه الدلالة:</b> أمر بأخذ الحذر داخل الصلاة نفسها، فالصلاة لا تُغفلهم عن الدفاع، وأخذ الحذر كناية عن شدة اليقظة."], ["استخرج ما يدل على الجمع بين التيسير والحذر في أمر السلاح.", "<b>الدليل:</b> ﴿ ولا جناح عليكم إن كان بكم أذى من مطر أو كنتم مرضى أن تضعوا أسلحتكم وخذوا حذركم ﴾<br><b>وجه الدلالة:</b> رفع الجناح عن وضع السلاح عند المشقة تيسير، وبقاء الأمر بأخذ الحذر يمنع الغفلة."], ["استخرج ما يدل على أن صلاة الجماعة أولى من الانفراد حتى عند الخطر.", "<b>الدليل:</b> ﴿ فلتقم طائفة منهم معك ﴾<br><b>وجه الدلالة:</b> أمر بالجماعة في أشد الأحوال مع ما فيها من حركة وحمل سلاح، فإيجابها في الأمن أولى."]]], ["الآيتان (١٠٣ – ١٠٤)", "#e0a458", [["استخرج ما يدل على أن الذكر عبادة تشمل جميع الأحوال، وبيّن وجه الدلالة.", "<b>الدليل:</b> ﴿ فاذكروا الله قيامًا وقعودًا وعلى جنوبكم ﴾<br><b>وجه الدلالة:</b> الأحوال الثلاثة تستغرق أحوال الإنسان كلها، فلا حال يخلو من الذكر."], ["استخرج ما يدل على أن الصلاة لا تسقط عن المؤمن في أي حال.", "<b>الدليل:</b> ﴿ إن الصلاة كانت على المؤمنين كتابًا موقوتًا ﴾<br><b>وجه الدلالة:</b> «كتابًا موقوتًا» فرض له وقت، لا بد من أدائه في وقته سفرًا وحضرًا وأمنًا وخوفًا."], ["استخرج ما يدل على أن ما يميّز المؤمن عن عدوّه ليس الألم بل الرجاء.", "<b>الدليل:</b> ﴿ إن تكونوا تألمون فإنهم يألمون كما تألمون وترجون من الله ما لا يرجون ﴾<br><b>وجه الدلالة:</b> الألم مشترك بين الفريقين، والفارق رجاء المؤمن في ثواب الله والنجاة من عقابه."]]]];
+var app=document.getElementById("app"),n=0;
+D.forEach(function(s){
+ var sec=document.createElement("section");sec.style.setProperty("--c",s[1]);
+ var h=document.createElement("h2");h.textContent=s[0];sec.appendChild(h);
+ var g=document.createElement("div");g.className="grid";
+ s[2].forEach(function(q){
+  n++;var c=document.createElement("div");c.className="card";
+  c.innerHTML='<div class="in"><div class="face front"><span class="num">'+n+'</span>'+q[0]+'<div class="hint">اضغطي للإجابة ↺</div></div><div class="face back">'+q[1]+'</div></div>';
+  c.onclick=function(){c.classList.toggle("f")};
+  g.appendChild(c);
+ });
+ sec.appendChild(g);app.appendChild(sec);
+});
+</script>
+</body>
+</html>
